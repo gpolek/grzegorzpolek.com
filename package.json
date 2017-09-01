@@ -1,0 +1,19 @@
+{
+  "name": "grzegorzpolek.com",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "aws s3 sync ./public s3://grzegorzpolek.com --acl public-read --delete",
+    "test": "htmllint ./public/index.html && jslint ./public/assets/*.js && csslint ./public/assets/*.css"
+  },
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "htmllint": "^0.6.0",
+    "htmllint-cli": "^0.0.6",
+    "csslint": "^1.0.5",
+    "jslint": "^0.11.0"
+  }
+}
