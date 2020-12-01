@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "deploy": "aws s3 sync ./public s3://grzegorzpolek.com --acl public-read --delete",
-    "test": "htmllint ./public/index.html && jslint ./public/assets/*.js && csslint ./public/assets/*.css"
+    "download": "aws s3 sync s3://grzegorzpolek.com ./public --acl public-read --delete",
+    "test": "htmllint ./public/index.html && jslint ./public/assets/*.js && csslint ./public/assets/*.css",
+    "serve": "serve ./public"
   },
-  "private": true,
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "htmllint": "^0.6.0",

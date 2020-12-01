@@ -337,6 +337,10 @@ ol {
 #about p.intro {
     margin: 10px 0 0;
 }
+#about p.intro a {
+    color: #fff;
+    text-decoration: underline;
+}
 #about .social {
     margin-top: 19px;
     text-align: left;
@@ -470,6 +474,12 @@ ol {
   font-size: 52px;
   color: #000;
 }
+.iconsdev svg {
+    width: 3em;
+    height: auto;
+    vertical-align: middle;
+}
+
 #works {
     padding: 100px 0;
 }
@@ -624,6 +634,11 @@ ol.type li a.active {
     padding: 26px 8px;
     transition: all 0.5s ease 0s;
     width: 80px;
+}
+#resume .company-logo {
+  width: 100px;
+  height: 100px;
+  float: right;
 }
 .education article {
     padding: 0 0 60px;
@@ -872,6 +887,13 @@ ol.type li a.active {
     line-height: 170%;
 }
 
+#skills .holder {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 95px;
+    overflow: hidden;
+    padding: 0 0 48px;
+}
+
 .label {
     font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -999,7 +1021,7 @@ ol.type li a.active {
 
 #blog {
     padding: 100px 0 80px;
-    background-color: #FBFBFB;
+    background-color: #FFFFFF;
 }
 #blog .blog {
     margin-bottom: 40px;
