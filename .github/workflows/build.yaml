@@ -1,0 +1,36 @@
+name: build-and-deploy
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up Google Cloud Platform's SDK
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.gcp_project_id }}
+          service_account_key: ${{ secrets.gcp_credentials }}
+          export_default_credentials: true
+
+      # Deploy to grzegorzpolek.com
+      - name: Deploy grzegorzpolek.com
+        run: gsutil -m rsync -d -c -r ./public gs://grzegorzpolek.com
+
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" gs://grzegorzpolek.com/**/*.html
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://grzegorzpolek.com/assets/*.js
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://grzegorzpolek.com/assets/*.css
+
+      #- run: gsutil iam ch allUsers:objectViewer gs://grzegorzpolek.com
+      #- run: gsutil web set -m index.html -e 404.html gs://grzegorzpolek.com
