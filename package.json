@@ -9,7 +9,7 @@
     "serve": "serve ./public"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "serve": "^11.3.2"
   },
   "devDependencies": {
