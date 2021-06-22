@@ -465,6 +465,7 @@ ol {
     margin: 10px 0 6px 90px;
     line-height: 1.8;
 }
+
 /* 7. Section Portfolio
 -------------------------------------------------*/
 .skills .label {
@@ -478,6 +479,11 @@ ol {
     width: 3em;
     height: auto;
     vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.ifico-logos img {
+    width: 75px;
 }
 
 #works {
@@ -888,10 +894,8 @@ ol.type li a.active {
 }
 
 #skills .holder {
-    border-bottom: 1px solid #ccc;
-    margin: 0 0 95px;
+    margin: 0 0 25px;
     overflow: hidden;
-    padding: 0 0 48px;
 }
 
 .label {
@@ -1328,6 +1332,25 @@ ul.footer-social li {
 #terminal_handle span {
     font-size: 32px;
     vertical-align: middle;
+}
+
+.hashtags {
+    padding-top: 5px;
+}
+
+.hashtags span {
+    font-size: 12px;
+    display: inline-block;
+    background: #efefef;
+    padding: 1px 6px 0px 6px;
+    margin-top: 6px;
+}
+
+.skill-tags  span {
+    display: inline-block;
+    background: #efefef;
+    padding: 1px 6px 0px 6px;
+    margin-top: 6px;
 }
 
 /* Loading */
