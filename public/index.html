@@ -110,6 +110,31 @@
 
     gtag('config', 'G-P6PKRPRB4G');
   </script>
+  <script>
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+          localStorage.setItem('theme', themeName);
+          document.documentElement.className = themeName;
+      }
+
+      // function to toggle between light and dark theme
+      function toggleTheme() {
+          if (localStorage.getItem('theme') === 'theme-dark') {
+              setTheme('theme-light');
+          } else {
+              setTheme('theme-dark');
+          }
+      }
+
+      // Immediately invoked function to set the theme on initial load
+      (function () {
+          if (localStorage.getItem('theme') === 'theme-dark') {
+              setTheme('theme-dark');
+          } else {
+              setTheme('theme-light');
+          }
+      })();
+  </script>
 </head>
 
 <body style="overflow: visible;">
@@ -137,7 +162,6 @@
           <li class=""><a href="#services" class="page-scroll">Services</a></li>
           <li class=""><a href="#skills" class="page-scroll">Skills</a></li>
           <li class=""><a href="#resume" class="page-scroll">Resume</a></li>
-          <li class=""><a href="#blog" class="page-scroll">Blog</a></li>
           <li class=""><a href="#Contact" class="page-scroll">Contact</a></li>
         </ul>
       </div>
@@ -150,8 +174,8 @@
     <div class="content" style="visibility: visible">
       <h1>I'm Grzegorz <mark>Polek</mark></h1>
       <hr>
-      <p class="lead">Architect, Cloud-native, Engineer</p>
-      <p>Cloud-native enthusiast, Software Architecture passionate, E-commerce and Finance focused, Product & Growth obsessed.</p>
+      <p class="lead">CTO, Architect, Engineer</p>
+      <p>Leadrship, Software Architecture, Cloud-native, Engineering.</p>
     </div>
   </section>
   <!-- About Me Section -->
@@ -172,15 +196,15 @@
             <p class="intro">
               <strong>I am a software architect focused on cloud-native technologies, distributed systems
                 and migration to the
-                cloud.</strong> I helped to architect and deploy complex systems based on Kubernetes and other
+                cloud.</strong> I helped architect and deploy complex, distributed systems based on 
               container technologies.
               I am experienced with cloud, cloud-native technologies and distributed systems architecture. I like to
               work in
               multidisciplinary teams following DevOps and Agile principles.
               <br /><br />
-              I work as a <a href="#g2a-lead-platform-architect">Lead Platform Architect</a> at <a href="https://g2a.co">G2A</a>, <span style="font-style: italic;">Global G-Commerce</span>, world's largest marketplace for digital products where the main vision
-              is to become the first shopping destination for gamers and geeks. I am responsible for our internal platform initiatives aiming to increase
-              developers performance, operations efficiency and production maintainability.
+              I work as a <a href="#playbook-cto">Chief Technology Officer</a> at <a href="http://playbookengineering.com/">Playbook Engineering</a>, provider of <span style="font-style: italic;">global betting platform</span> for established operators and new entrants who are looking to disrupt the betting industry.
+              <br /><br />
+              Ex <a href="#g2a-lead-platform-architect">Lead Architect</a> at <a href="https://g2a.co">G2A</a> and <a href="#grandparade-devops">DevOps Engineer</a> at <a href="https://grandparade.co.uk">Grand Parade</a>.
             </p>
             <div class="social">
               <ul>
@@ -233,6 +257,93 @@
               <span class="counter">
                 <span class="count">100</span> %
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Playbook Engineering -->
+  <section id="hiring" class="text-left">
+    <div class="container">
+      <div class="section-title center">
+        <h2>Playbook Engineering is <mark>Hiring</mark></h2>
+        <div class="line">
+        </div>
+        <p>Join <mark>betting</mark> revolution</p>
+      </div>
+      <div class="space"></div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 company">
+          <a href="https://www.linkedin.com/company/playbook-engineering/"><img src="/assets/logo_playbook_white.png" class="company-logo" /></a>
+          <div class="desc">
+            <p><mark><strong>Playbook Engineering</strong></mark> offers a <u>global betting platform</u> that provides a service to established operators and new entrants who are looking to disrupt the betting industry.</p> 
+            <p>We have offices in London and Krakow.</p>
+            <img src="/assets/london-krakow.png" class="" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 jobs">
+          <div class="">
+            <div class="job">
+              <div class="">
+                <a href="https://jobs.smartrecruiters.com/PlaybookEngineering/743999781767863-scala-developer-online-recruitment-">
+                  <strong><mark>Scala</mark> Developer</strong>
+                  <span><i class="icon icon-map-pin"></i> Kraków, Remote</span>
+                </a>
+              </div>
+            </div>
+            <div class="job">
+              <div class="">
+                <a href="https://jobs.smartrecruiters.com/PlaybookEngineering/743999768381733-frontend-developer-online-recruitment-">
+                  <strong><mark>Frontend</mark> Developer</strong>
+                  <span><i class="icon icon-map-pin"></i> Kraków, Remote</span>
+                </a>
+              </div>
+            </div>
+            <div class="job">
+              <div class="">
+                <a href="https://jobs.smartrecruiters.com/PlaybookEngineering/743999780042560-site-reliability-engineer-online-recruitment-">
+                  <strong>Site <mark>Reliability</mark> Engineer</strong>
+                  <span><i class="icon icon-map-pin"></i> Kraków, Remote</span>
+                </a>
+              </div>
+            </div>
+            <div class="job">
+              <div class="">
+                <a href="https://jobs.smartrecruiters.com/PlaybookEngineering/743999768382196-security-specialist-online-recruitment-">
+                  <strong><mark>Security</mark> Specialist</strong>
+                  <span><i class="icon icon-map-pin"></i> Kraków, Remote</span>
+                </a>
+              </div>
+            </div>
+            <div class="job">
+              <div class="">
+                <a href="https://jobs.smartrecruiters.com/PlaybookEngineering/743999778060256-support-technician-online-recruitment-">
+                  <strong><mark>Support</mark> Technician</strong>
+                  <span><i class="icon icon-map-pin"></i> Kraków, Remote</span>
+                </a>
+              </div>
+            </div>
+            <div class="job">
+              <div class="">
+                <a href="https://jobs.smartrecruiters.com/PlaybookEngineering/743999768381993-senior-qa-engineer-online-recruitment-">
+                  <strong>Senior <mark>QA</mark> Engineer</strong>
+                  <span><i class="icon icon-map-pin"></i> Kraków, Remote</span>
+                </a>
+              </div>
+            </div>
+            <div class="job">
+              <div class="">
+                <a href="https://jobs.smartrecruiters.com/PlaybookEngineering/743999779223475-trading-sports-assistan-online-recruitment-">
+                  <strong><mark>Trading Sports</mark> Assistant</strong>
+                  <span><i class="icon icon-map-pin"></i> Kraków, Remote</span>
+                </a>
+              </div>
+            </div>
+            <div class="job">
+              <div class="text-right">
+                <a href="https://careers.smartrecruiters.com/PlaybookEngineering">See all jobs at <strong>Playbook Engineering</strong></a>
+              </div>
             </div>
           </div>
         </div>
@@ -461,16 +572,54 @@
             <h2>Work Experience</h2>
           </div>
           <div class="col-md-8 col-sm-8">
+            <!-- Playbook Engineering -->
+            <a id="playbook-cto"></a>
+            <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <a href="https://www.linkedin.com/company/playbook-engineering/"><img src="/assets/logo_playbook.png" class="company-logo playbook" /></a>
+              <h3>Chief Technology Officer</h3>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/playbook-engineering/">Playbook Engineering</a></span> / December 2021 - Present</p>
+              <p class="years">1+ month</p>
+              <div class="divider"></div>
+              <p>
+                <strong>I work as a Chief Technology Officer at Playbook Engineering where I am responsible for Playbook's technology standards, strategy, best practices and development processes. We provide next gen <u>global betting platform</u> for established operators and new entrants who are looking to disrupt the betting industry.</strong>
+              </p>
+              <p>
+                - Develop technical aspects of the company’s strategy to ensure alignment with its business goals<br />
+                - Defining technology standards and best practices and sharing and enforcing them in organization<br />
+                - Developing the company’s strategy for using technological resources<br />
+                - Ensuring technologies are used efficiently, profitably and securely<br />
+                - Supporting teams in the process of defining requirements in terms of alignment with architecture strategy, technology standards and engineering best practices<br />
+                - Discover and implement new technologies that yield competitive advantage<br />
+                - Supervise system infrastructure to ensure functionality and efficiency<br />
+                - Monitor KPIs and IT budgets to assess technological performance<br />
+                - Use stakeholders’ feedback to inform necessary improvements and adjustments to technology<br />
+                - Communicate technology strategy to partners and investors<br />
+              </p>
+              <p>Leading engineering department of 60+ engineers.</p>
+              <div class="hashtags">
+                <span>#leadership</span> <span>#agile</span> <span>#architecture</span> <span>#technology</span> <span>#standards</span> <span>#best-practices</span> <span>#kpi/okr</span> 
+              </div>
+              <div class="playbook_logos">
+                <a href="https://starsports.bet/"><img src="/assets/logo_playbook_star.png" class="playbook-logo" /></a>
+                <a href="https://rhino.bet/"><img src="/assets/logo_playbook_rhino.png" class="playbook-logo" /></a>
+                <a href="https://betzone.co.uk/"><img src="/assets/logo_playbook_betzone.png" class="playbook-logo" /></a>
+                <a href="https://planetsportbet.com/"><img src="/assets/logo_playbook_planet.png" class="playbook-logo" /></a>
+                <a href="https://vickers.bet/"><img src="/assets/logo_playbook_vickers.png" class="playbook-logo" /></a>
+                <a href="https://mcbookie.com/"><img src="/assets/logo_playbook_mcbookie.png" class="playbook-logo" /></a>
+                <a href="https://ne-bet.com/"><img src="/assets/logo_playbook_nebet.png" class="playbook-logo" /></a>
+                <a href="https://bresbet.com/"><img src="/assets/logo_playbook_bresbet.png" class="playbook-logo" /></a>
+              </div>
+            </article>
             <!-- G2A.com -->
             <a id="g2a-lead-platform-architect"></a>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <img src="/assets/logo_g2a.jpg" class="company-logo" />
+              <a href="https://www.linkedin.com/company/g2a-com/"><img src="/assets/logo_g2a.jpg" class="company-logo" /></a>
               <h3>Lead Platform Architect</h3>
-              <p class="info-line"><span>G2A.com</span> / March 2021 - Present</p>
-              <p class="years">3+ months</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/g2a-com/">G2A.com</a></span> / March 2021 - November 2021</p>
+              <p class="years">1 year 9 months</p>
               <div class="divider"></div>
               <p>
-                <strong>I am working as a Lead Platform Architect and I am responsible for all G2A's internal platform initiatives  iming to increase
+                <strong>Worked as a Lead Platform Architect where I was responsible for all G2A's internal platform initiatives aiming to increase
                   developers performance, operations efficiency and production maintainability. <br />
                 From application delivery platform built around <u>Kubernetes</u>, <u>Rancher</u> and other cloud-native technologies, through frontend platform leveraging <u>React</u> and <u>Next</u> which empowers frontend developers to develope web pages with confidence, data platform event-based data analytics and reporting hub with technologies like <u>Kafka</u>, <u>Flink</u> and <u>Spark</u>, to observability platform built on top of open standards like <u>OpenTelemetry</u> and <u>OpenMetrics</u>.</strong>
               </p>
@@ -491,14 +640,15 @@
                 - Discover team members’ training needs<br />
                 - Listen to team members’ feedback and resolve any issues or conflicts<br />
               </p>
+              <p>Led 3 team of 3-7 engineers, 20 engineers total.</p>
               <div class="hashtags">
                 <span>#leadership</span> <span>#architecture</span> <span>#cloud-native</span> <span>#kubernetes</span> <span>#prometheus</span> <span>#opentelemetry</span> <span>#openmetrics</span> <span>#stream-processing</span> <span>#batch-processing</span> <span>#etl</span> <span>#react</span>
               </div>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <img src="/assets/logo_g2a.jpg" class="company-logo" />
+              <a href="https://www.linkedin.com/company/g2a-com/"><img src="/assets/logo_g2a.jpg" class="company-logo" /></a>
               <h3>Product Owner</h3>
-              <p class="info-line"><span>G2A.com</span> / January 2020 - February 2021</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/g2a-com/">G2A.com</a></span> / January 2020 - February 2021</p>
               <p class="years">1 year 2 months</p>
               <div class="divider"></div>
               <p>
@@ -517,9 +667,9 @@
               </div>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <img src="/assets/logo_g2a.jpg" class="company-logo" />
+              <a href="https://www.linkedin.com/company/g2a-com/"><img src="/assets/logo_g2a.jpg" class="company-logo" /></a>
               <h3>Software Architect</h3>
-              <p class="info-line"><span>G2A.com</span> / October 2018 - February 2021</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/g2a-com/">G2A.com</a></span> / October 2018 - February 2021</p>
               <p class="years">2 year 5 months</p>
               <div class="divider"></div>
               <p>
@@ -541,10 +691,9 @@
               </div>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <img src="/assets/logo_g2a.jpg" class="company-logo" />
+              <a href="https://www.linkedin.com/company/g2a-com/"><img src="/assets/logo_g2a.jpg" class="company-logo" /></a>
               <h3>IT Supervisor</h3>
-              <p class="info-line">
-                <span>G2A.com</span> / Sep 2017 - July 2018</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/g2a-com/">G2A.com</a></span> / Sep 2017 - July 2018</p>
               <p class="years">11 months</p>
               <div class="divider"></div>
               <p>
@@ -565,9 +714,9 @@
               </div>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <img src="/assets/logo_g2a.jpg" class="company-logo" />
+              <a href="https://www.linkedin.com/company/g2a-com/"><img src="/assets/logo_g2a.jpg" class="company-logo" /></a>
               <h3>Senior DevOps Engineer</h3>
-              <p class="info-line"><span>G2A.com</span> / May 2017 - October 2018</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/g2a-com/">G2A.com</a></span> / May 2017 - October 2018</p>
               <p class="years">1 year 6 months</p>
               <div class="divider"></div>
               <p>
@@ -602,9 +751,9 @@
               </div>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <img src="/assets/logo_g2a.jpg" class="company-logo" />
+              <a href="https://www.linkedin.com/company/g2a-com/"><img src="/assets/logo_g2a.jpg" class="company-logo" /></a>
               <h3>DevOps Engineer</h3>
-              <p class="info-line"><span>G2A.com</span> / February 2017 - May 2017</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/g2a-com/">G2A.com</a></span> / February 2017 - May 2017</p>
               <p class="years">4 months</p>
               <div class="divider"></div>
               <p>
@@ -638,10 +787,11 @@
               </div>
             </article>
             <!-- Grand Parade -->
+            <a id="grandparade-devops"></a>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <img src="/assets/logo_gp.png" class="company-logo" />
+              <a href="https://www.linkedin.com/company/grand-parade/"><img src="/assets/logo_gp.png" class="company-logo" /></a>
               <h3>DevOps Engineer</h3>
-              <p class="info-line"><span>Grand Parade <i>part of William Hill</i></span> / October 2015 - February 2017</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/grand-parade/">Grand Parade</a> <i>part of William Hill</i></span> / October 2015 - February 2017</p>
               <p class="years">1 year 4 months</p>
               <div class="divider"></div>
               <p>
@@ -666,9 +816,9 @@
               </div>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <img src="/assets/logo_gp.png" class="company-logo" />
+              <a href="https://www.linkedin.com/company/grand-parade/"><img src="/assets/logo_gp.png" class="company-logo" /></a>
               <h3>Technical Support Engineer</h3>
-              <p class="info-line"><span>Grand Parade <i>part of William Hill</i></span> / March 2015 - October 2015</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/grand-parade/">Grand Parade</a> <i>part of William Hill</i></span> / March 2015 - October 2015</p>
               <p class="years">8 months</p>
               <div class="divider"></div>
               <p>
@@ -693,9 +843,9 @@
               </div>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <img src="/assets/logo_gp.png" class="company-logo" />
+              <a href="https://www.linkedin.com/company/grand-parade/"><img src="/assets/logo_gp.png" class="company-logo" /></a>
               <h3>Mobile Web Developer</h3>
-              <p class="info-line"><span>Grand Parade <i>part of William Hill</i></span> / July 2014 - February 2015</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/grand-parade/">Grand Parade</a> <i>part of William Hill</i></span> / July 2014 - February 2015</p>
               <p class="years">8 months</p>
               <div class="divider"></div>
               <p>
@@ -717,9 +867,9 @@
             </article>
             <!-- Hamilton May -->
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <img src="/assets/logo_hm.jpg" class="company-logo" />
+              <a href="https://www.linkedin.com/company/hamilton-may-real-estate-company/"><img src="/assets/logo_hm.jpg" class="company-logo" /></a>
               <h3>Web Developer</h3>
-              <p class="info-line"><span>Hamilton May</span> / April 2012 - June 2014</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/hamilton-may-real-estate-company/">Hamilton May</a></span> / April 2012 - June 2014</p>
               <p class="years">2 years 3 months</p>
               <div class="divider"></div>
               <p>
@@ -741,13 +891,13 @@
             </article>
             <!-- Personal -->
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <img src="/assets/logo_ifico.png" class="company-logo" />
+              <a href="https://www.linkedin.com/company/ifico/"><img src="/assets/logo_ifico.png" class="company-logo" /></a>
               <h3>Owner</h3>
-              <p class="info-line"><span>ifico</span> / Self-employment</p>
+              <p class="info-line"><span><a href="https://www.linkedin.com/company/ifico/">ifico</a></span> / Self-employment</p>
               <p class="years">10+ years</p>
               <div class="divider"></div>
               <p>
-                Next-Gen platform for small and medium businesses, learn more at <a href="https://ifico.io">ifico.io</a>
+                <strong>ifico</strong> is a complete platform and stack that allows enterprises to deliver applications faster, better and safer in private and public clouds, learn more at <a href="https://ifico.io">ifico.io</a>
               </p>
             </article>
           </div>
@@ -760,24 +910,19 @@
           </div>
           <div class="col-md-8 col-sm-8">
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <h3>Postgraduate Degree <small>IT Business Management</small></h3>
+              <p class="info-line"><span>AGH University of Science and Technology</span> / 2021 - present</p>
+              <p class="years">graduated</p>
+            </article>
+            <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
               <h3>Master of Science (MSc) <small>Computer Science in Industry</small></h3>
               <p class="info-line"><span>AGH University of Science and Technology</span> / 2014 - 2016</p>
               <p class="years">graduated</p>
-              <div class="divider"></div>
-              <p>While studying <u>Computer Science in Industry</u>, I have gained knowledge from areas like computer
-                graphics, computer-mediated communication, conceptual graphs, database systems, decision support
-                systems, general purpose multiprocessor, microprocessor
-                applications, operating system design, software engineering and user interface management systems.</p>
             </article>
             <article class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
               <h3>Bachelor of Science (BSc) <small>Applied Computer Science</small></h3>
               <p class="info-line"><span>AGH University of Science and Technology</span> / 2010 - 2014</p>
               <p class="years">graduated</p>
-              <div class="divider"></div>
-              <p>While studying <u>Applied Computer Science</u>, I have learned how to use the newest programming techniques
-                and how to adapt existing software to particular industrial conditions. I am skilled in using numerical
-                modelling and artificial intelligence
-                software, expert systems, graphics and multimedia techniques and technical device maintenance systems.</p>
             </article>
           </div>
         </div>
@@ -879,83 +1024,6 @@
         </div>
       </div>
   </section>
-
-  <section id="blog" class="text-left">
-    <div class="container">
-      <div class="section-title center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-        <h2>My <mark>Blog</mark></h2>
-        <div class="line">
-        </div>
-        <p>Read about Cloud, <mark>Software Architecture</mark> and DevOps</p>
-      </div>
-      <div class="space"></div>
-      <div id="blog-masonry" style="position: relative; height: 350px;">
-        <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeIn; position: absolute; left: 0px; top: 0px;">
-          <span>09<br>Oct</span>
-          <div class="post-img"></div>
-          <h3><a href="https://blog.gpolek.com/understanding-service-discovery/">Understanding Service Discovery</a></h3>
-          <h4>By gpolek . 09 Oct 2016</h4>
-          <p>Why service discovery? Let's assume we have X number of applications deployed across Y number of hosts
-            which needs to communicate with each other. How do we can ensure that our components can freely communicate
-            using proper hosts and ports?
-            In the ideally world we would like to be able&#8230;
-          </p>
-          <a href="https://blog.gpolek.com/understanding-service-discovery/" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-        </div>
-        <!--<div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn; position: absolute; left: 380px; top: 0px;">
-                  <span>16<br>Aug</span>
-                  <img src="./assets/2(3).jpg" alt="..." class="post-img">
-                  <h3><a href="http://linewp.com/demo/invers/#">Simple journal post</a></h3>
-                  <h4>By John Doe . 16 Aug 2015</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="http://linewp.com/demo/invers/#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-               </div>
-               <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeIn; position: absolute; left: 760px; top: 0px;">
-                  <span>24<br>May</span>
-                  <img src="./assets/3(3).jpg" alt="..." class="post-img">
-                  <h3><a href="http://linewp.com/demo/invers/#">Journal post with image</a></h3>
-                  <h4>By John Doe . 24 May 2015</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="http://linewp.com/demo/invers/#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-               </div>
-               <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeIn; position: absolute; left: 380px; top: 495px;">
-                  <span>23<br>Oct</span>
-                  <img src="./assets/4(2).jpg" alt="..." class="post-img">
-                  <h3><a href="http://linewp.com/demo/invers/#">Journal post with image</a></h3>
-                  <h4>By John Doe . 23 Oct 2015</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="http://linewp.com/demo/invers/#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-               </div>
-               <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn; position: absolute; left: 0px; top: 622px;">
-                  <span>16<br>Aug</span>
-                  <img src="./assets/5(1).jpg" alt="..." class="post-img">
-                  <h3><a href="http://linewp.com/demo/invers/#">Simple journal post</a></h3>
-                  <h4>By John Doe . 16 Aug 2015</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="http://linewp.com/demo/invers/#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-               </div>
-               <div class="col-md-4 col-sm-6 blog wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.7s; animation-name: fadeIn; position: absolute; left: 760px; top: 675px;">
-                  <span>24<br>May</span>
-                  <img src="./assets/6(1).jpg" alt="..." class="post-img">
-                  <h3><a href="http://linewp.com/demo/invers/#">Journal post with image</a></h3>
-                  <h4>By John Doe . 24 May 2015</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="http://linewp.com/demo/invers/#" class="read-more">Read more <i class="fa fa-angle-right"></i></a>
-              </div>-->
-      </div>
-    </div>
-  </section>
-
 
   <!-- Contact Section -->
   <section id="Contact">

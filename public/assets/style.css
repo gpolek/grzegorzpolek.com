@@ -24,6 +24,25 @@
 /* 1. Basic Document Styles
 -------------------------------------------------*/
 
+.theme-light {
+    --color-primary: #FEF7A4;
+    --color-secondary: #FEF7A4;
+    --font-color: #434242;
+    --link-color: #222;
+    --active-color: #333;
+    --background-color: #fff;
+    --foreground-color: #000000;
+ }
+ .theme-dark {
+    --color-primary: #FEF7A4;
+    --color-secondary: #FEF7A4;
+    --font-color: #999;
+    --link-color: #eee;
+    --active-color: #fff;
+    --background-color: #000;
+    --foreground-color: #fff;
+ }
+
 body,
 html {
     font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -33,6 +52,7 @@ html {
     font-size: 14px;
     letter-spacing: -0.2px;
     overflow-x: hidden;
+    background: var(--background-color)
 }
 h1,
 h2,
@@ -63,23 +83,23 @@ h5 {
     line-height: 20px;
 }
 .label-primary {
-    background: #000;
+    background: var(--foreground-color);
 }
 a {
-    color: #222;
+    color: var(--link-color);
 }
 a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
-    color: #333;
+    color: var(--active-color);
 }
 li {
     list-style: outside none none;
 }
 mark {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--foreground-color);
+    color: var(--background-color);
     padding: 0.1em;
 }
 .clearfix:after {
@@ -172,7 +192,7 @@ ol {
 #main-menu a.navbar-brand {
     text-transform: uppercase;
     font-size: 22px;
-    color: #434242;
+    color: var(--link-color);
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
 }
@@ -181,7 +201,7 @@ ol {
 }
 #main-menu.navbar-default .navbar-nav > li > a {
     text-transform: uppercase;
-    color: #434242;
+    color: var(--link-color);
     font-size: 12px;
     letter-spacing: 1px;
 }
@@ -198,7 +218,7 @@ ol {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #333 !important;
+    color: var(--active-color) !important;
     background-color: transparent;
     font-weight: 700;
 }
@@ -209,10 +229,10 @@ ol {
 .navbar-default .navbar-toggle:focus {
     background-color: #FEF7A4;
     border-color: #FEF7A4;
-    color: #333;
+    color: var(--active-color) ;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-    background-color: #333;
+    background-color: var(--active-color);
 }
 /* 3. Section Titles
 -------------------------------------------------*/
@@ -254,7 +274,7 @@ ol {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #434242;
+    color: var(--font-color);
 }
 #home:after {
     content: "";
@@ -269,8 +289,16 @@ ol {
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     width: 100%;
+}
+.theme-dark #home:after { 
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1.0;
 }
 #home h1 {
     font-size: 58px;
@@ -294,6 +322,7 @@ ol {
 .content {
     position: relative;
     padding: 19% 0 15%;
+    z-index: 2;
 }
 .content mark {
     padding: 0;
@@ -645,6 +674,22 @@ ol.type li a.active {
   width: 100px;
   height: 100px;
   float: right;
+}
+#resume .company-logo.playbook {
+    width: 300px;
+    height: 100px;
+}
+#resume .playbook_logos {
+    text-align: center;
+    padding-top: 15px;
+}
+#resume .playbook_logos .playbook-logo {
+    width: 150px;
+    margin: 15px;
+    opacity: 0.6;
+}
+#resume .playbook_logos .playbook-logo:hover {
+    opacity: 1.0;
 }
 .education article {
     padding: 0 0 60px;
@@ -1411,6 +1456,49 @@ ul.footer-social li {
 .loading-pulse:after {
   left: 12px;
   animation-delay: 500ms;
+}
+
+#hiring .company {
+    z-index: 10;
+}
+
+#hiring .company img.company-logo {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+#hiring .desc {
+    color: #333;
+    padding: 15px;
+    background: #fff;
+    text-align: center;
+    margin-right: 75px;
+}
+
+#hiring .company img {
+    max-width: 100%;
+}
+
+#hiring .jobs {
+    background-color: #FBFBFB;
+    color: #000;
+
+    margin-left: -75px;
+    margin-top: 25px;
+    padding: 30px;
+    padding-left: 100px;
+
+    z-index: 9;
+
+}
+
+#hiring .jobs .job {
+    padding: 25px 0;
+}
+
+#hiring {
+    padding: 10px 0 120px 0;;
 }
 
 /* 15. Media Queries For Responsive Design
