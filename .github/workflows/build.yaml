@@ -16,13 +16,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Set up Google Cloud Platform's SDK
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@main
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
         with:
           project_id: ${{ secrets.gcp_project_id }}
           service_account_key: ${{ secrets.gcp_credentials }}
           export_default_credentials: true
+
+      # Set up Google Cloud Platform's SDK
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.gcp_project_id }}
 
       # Deploy to grzegorzpolek.com
       - name: Deploy grzegorzpolek.com
