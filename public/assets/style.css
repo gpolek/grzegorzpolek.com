@@ -679,6 +679,11 @@ ol.type li a.active {
     width: 300px;
     height: 100px;
 }
+#resume .company-logo.symmetrical {
+    height: 75px;
+    width: auto;
+}
+
 #resume .playbook_logos {
     text-align: center;
     padding-top: 15px;
